@@ -21,7 +21,7 @@ export default function About() {
                       
                   <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{i.id}<span className='ml-2'>{i.author}</span></div>
-                    <p class="text-gray-700 text-base">
+                    <p class="text-gray-800 text-base ">
                       {i.quote}
                     </p>
                   </div>
