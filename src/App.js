@@ -1,18 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Carosel from './Components/Carosel/Carosel';
+import React from 'react'
 
-function App() {
+import {Routes,Route} from "react-router-dom"
+import About from './redux/About';
+import Home from './redux/Home';
+export default function App() {
+
   return (
-    <BrowserRouter>
     <Routes>
-      <Route path="/"element={<Carosel/>}/>
-
+      
+      <Route path='/' element={<Home/>} />
+      <Route path='/about' element={<About/>} />
       
     </Routes>
-    </BrowserRouter>
-  );
+  )
 }
-
-export default App;
