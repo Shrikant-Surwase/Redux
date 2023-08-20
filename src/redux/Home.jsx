@@ -1,6 +1,6 @@
 import React from 'react'
 import {useDispatch,useSelector} from "react-redux"
-import About from './About';
+import About from './Cards';
 import { increment,decrement, addbyvalue} from './createSlice';
 export default function Home() {
 const count = useSelector((state)=>state.data)
